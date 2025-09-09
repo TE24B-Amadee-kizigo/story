@@ -6,17 +6,17 @@
 
 
 
-  string choice = "";
+string choice = "";
 
-  
 
-  Console.WriteLine("Du står i en vällbekant korridor. Grå väggar, grått golv. Ett alarm genom rymdskäppet. Något är fel med reaktorn!");
-  Console.WriteLine("på din högra sida finns en affish: \"KOM IHÅG: RÖTT ÄR SÖTT OCH GRÖNT ÄR OSKÖNT!\"");
-  Console.WriteLine("till vänster finns dörren som leder till reaktorrummet.");
-  Console.WriteLine("Följer du korridoren rakt framåt så kommer du till hangaren, där libåtarna finns");
-  Console.WriteLine("Vart går du? Framåt eller vänster?");
-  choice = Console.ReadLine();
-  choice = choice.ToLower();
+
+Console.WriteLine("Du står i en vällbekant korridor. Grå väggar, grått golv. Ett alarm genom rymdskäppet. Något är fel med reaktorn!");
+Console.WriteLine("på din högra sida finns en affish: \"KOM IHÅG: RÖTT ÄR SÖTT OCH GRÖNT ÄR OSKÖNT!\"");
+Console.WriteLine("till vänster finns dörren som leder till reaktorrummet.");
+Console.WriteLine("Följer du korridoren rakt framåt så kommer du till hangaren, där libåtarna finns");
+Console.WriteLine("Vart går du? Framåt eller vänster?");
+choice = Console.ReadLine();
+choice = choice.ToLower();
 
 if (choice == "framåt")
 {
@@ -42,10 +42,25 @@ else if (choice == "vänster")
     if (choice == "röd")
     {
         Console.WriteLine("Bra jobbat! Du mindes precis i tid någon på marknadsföringsavdelningen tyckt att rött var en mycket snällare färg och att man därmed bytt färg på alla ja/nej knappar. ");
-Console.WriteLine("rymdskäppet är räddat och kan åka vidare med sin last av illegala vapen.");
+        Console.WriteLine("rymdskäppet är räddat och kan åka vidare med sin last av illegala vapen.");
 
     }
+
+    else if (choice == "grön")
+    {
+        Console.WriteLine("BOOM! Tyvärr hade du glömt att någon på marknadsföringsavdelningen tyckt att rött var en mycket snällare färg och att man därmed bytt färg på alla ja/nej-knappar.");
+        Console.WriteLine("Du är död och rymdskeppet förintat.");
+    }
+    else
+    {
+        Console.WriteLine("Din klant! Du skrev inget jag kunde förstå, så nu dör du när reaktorn exploderar.");
+}
+
+Console.WriteLine("Tryck ENTER för att avsluta.");
 Console.ReadLine();
+
+
+    Console.ReadLine();
 }
 Console.ReadLine();
 
